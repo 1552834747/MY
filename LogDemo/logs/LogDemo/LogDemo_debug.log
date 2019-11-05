@@ -1,0 +1,2 @@
+2019-10-30 14:35:50.676 [main] DEBUG com.log.logdemo.LogdemoApplication - Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-30 14:36:40.604 [http-nio-8080-exec-1] DEBUG com.log.logdemo.controller.LogController - debug=====================

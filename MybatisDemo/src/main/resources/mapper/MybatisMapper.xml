@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mybatis.mybatisdemo.dao.MybatisDao">
+
+
+
+    <update id="setlist" parameterType="map">
+        UPDATE test
+        set
+        `value` = (
+        case
+        <foreach collection="list" item="map" separator=" " index="index">
+            WHEN id = #{map.id} THEN #{map.value}
+        </foreach>
+        END)
+        WHERE id in
+        <foreach collection="list" item="map" separator="," open="(" close=")">
+            #{map.id}
+        </foreach>
+    </update>
+
+    <select id="getlist" resultType="map">
+        select  * from test
+    </select>
+
+
+</mapper>

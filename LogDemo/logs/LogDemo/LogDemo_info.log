@@ -1,0 +1,21 @@
+2019-10-30 14:35:50.672 [main] INFO  com.log.logdemo.LogdemoApplication - Starting LogdemoApplication on PC-20170605TOKN with PID 8712 (F:\MY\LogDemo\target\classes started by Administrator in F:\MY)
+2019-10-30 14:35:50.676 [main] INFO  com.log.logdemo.LogdemoApplication - No active profile set, falling back to default profiles: default
+2019-10-30 14:35:51.916 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-10-30 14:35:51.927 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2019-10-30 14:35:51.936 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-30 14:35:51.936 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-30 14:35:51.941 [main] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.21] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2019-10-30 14:35:51.942 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.21] using APR version [1.6.5].
+2019-10-30 14:35:51.942 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-30 14:35:51.942 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-30 14:35:51.945 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2019-10-30 14:35:52.042 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-30 14:35:52.042 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1296 ms
+2019-10-30 14:35:52.217 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-30 14:35:52.336 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2019-10-30 14:35:52.358 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-10-30 14:35:52.361 [main] INFO  com.log.logdemo.LogdemoApplication - Started LogdemoApplication in 2.252 seconds (JVM running for 2.83)
+2019-10-30 14:36:40.536 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-30 14:36:40.537 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-10-30 14:36:40.563 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+2019-10-30 14:36:40.604 [http-nio-8080-exec-1] INFO  com.log.logdemo.controller.LogController - info=======================

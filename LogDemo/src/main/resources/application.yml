@@ -1,0 +1,7 @@
+logging:
+  level:
+    com.log.logdemo: debug
+
+spring:
+  application:
+    name: LogDemo

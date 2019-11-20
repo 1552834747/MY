@@ -9,8 +9,6 @@ import java.util.*;
 
 public class TestDemo {
 
-    private InputStream userXls;
-    private InputStream userXlsx;
     private InputStream test;
     private String userXlsName = "UserXls.xls";
     private String userXlsxName = "UserXlsx.xlsx";
@@ -18,9 +16,7 @@ public class TestDemo {
 
     {
         try {
-            userXls = new FileInputStream("F:\\MY\\ExcelDemo\\src\\main\\resources\\static\\UserXls.xls");
-            userXlsx = new FileInputStream("F:\\MY\\ExcelDemo\\src\\main\\resources\\static\\UserXlsx.xlsx");
-            test = new FileInputStream("F:\\MY\\ExcelDemo\\src\\main\\resources\\static\\test.xlsx");
+            test = new FileInputStream("F:\\test\\MY\\ExcelDemo\\src\\main\\resources\\static\\test.xlsx");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -53,7 +49,7 @@ public class TestDemo {
 
     @Test
     public void test8() throws Exception {
-        FileOutputStream output = new FileOutputStream("F:\\MY\\ExcelDemo\\src\\main\\resources\\static\\test.xlsx");
+        FileOutputStream output = new FileOutputStream("F:\\test\\MY\\ExcelDemo\\src\\main\\resources\\static\\test.xlsx");
         AirExcelUtil<TestEntity> excelUtil = new AirExcelUtil<TestEntity>(TestEntity.class);
         ArrayList<TestEntity> users = getUser(3, 5);
         boolean test = excelUtil.exportExcel(users,"test","text.xlsx", output);
